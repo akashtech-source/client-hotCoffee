@@ -7,7 +7,7 @@ import "./MoreNews.css";
 const MoreNews = () => {
   const [newses, setNewses] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/news")
+    fetch("https://hotcoffee-server.herokuapp.com/news")
       .then((res) => res.json())
       .then((data) => setNewses(data));
   }, []);

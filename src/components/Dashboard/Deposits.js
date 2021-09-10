@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 export default function Deposits() {
   const [news, setnews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/news")
+    fetch("https://hotcoffee-server.herokuapp.com/news")
       .then((res) => res.json())
       .then((data) => setnews(data));
   }, []);

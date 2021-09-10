@@ -135,7 +135,7 @@ export default function Dashboard() {
       excerpt: data.excerpt,
       imageURL: imageURL,
     };
-    const url = `http://localhost:5000/addNews`;
+    const url = `https://hotcoffee-server.herokuapp.com/addNews`;
 
     console.log(donorData);
     fetch(url, {

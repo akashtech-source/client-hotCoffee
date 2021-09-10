@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Orders() {
   const [news, setNews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/news")
+    fetch("https://hotcoffee-server.herokuapp.com/news")
       .then((res) => res.json())
       .then((data) => setNews(data));
   }, []);

@@ -31,7 +31,7 @@ const FullNews = () => {
   const { id } = useParams();
   const [news, setNews] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/fullNews/${id}`;
+    const url = `https://hotcoffee-server.herokuapp.com/fullNews/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setNews(data[0]));
